@@ -1,0 +1,53 @@
+Django==2.1.2
+djangorestframework==3.9.0
+django-extensions==1.8.1
+django-rest-swagger==2.2.0
+django-crontab==0.7.1
+drf-extensions==0.4.0
+django-adminplus==0.5
+django-daterange_filter==1.3.0
+requests==2.20.0
+#pycrypto==2.6.1
+
+pycryptodomex==3.7.1
+pillow==5.4.1
+anyjson==0.3.3
+pycryptodome==3.8.2
+
+gunicorn==19.9.0
+gevent==1.3.7
+
+qiniu==7.1.0
+#django-qiniu-storage==2.3.1
+# rongcloud==2.0.1
+# https://github.com/rongcloud/server-sdk-python/archive/master.zip
+#https://codeload.github.com/rongcloud/server-sdk-python/zip/v2.0.1
+
+# celery==4.3.0
+celery==3.1.26.post2
+django-celery==3.2.2
+flower==0.9.3
+
+redis==2.10.6
+django-redis==4.10.0
+# redispy==3.0.0
+
+# social-auth-app-django==1.2.0
+#rest-social-auth==1.3.1
+#social-auth-core==1.7.0
+
+# pywxpay==0.4
+#python-alipay-sdk==1.3.0
+#aliyun-python-sdk-core==2.6.2
+
+#django-admin-view-permission==1.6
+#jpush==3.3.0
+
+pyopenssl
+ndg-httpsclient
+pyasn1
+MySQL-python; python_version < '3.0' --no-binary MySQL-python
+mysqlclient; python_version > '3.0'
+
+lxml==4.3.3
+wechatpy==1.8.2

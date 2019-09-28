@@ -1,0 +1,66 @@
+### 创建用户
+POST {{base_qlive}}/qliveuser/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "appId": "wxca891295c56f2c79",
+  "code": "023J24sA10U34d0EoJrA1zSisA1J24sO",
+  "encryptedData": "U0RW1z/c0xr59qGgJEtqDxjJZ6/n8zBmqpmbb6mimRekALLWPfuxABbype99YDGO64d2TC6BbFNIfBr5jVpZ5x1Tud6CwJUdd8uqMPrWJnOWonwU6qb+P/0hbQAIYYu4r8RcdBdxm9REqwwq/fOxbxU0c98Iea6SsDzfdIRfPn7JLwyyk4cNWPNTRmhgCJSR3sj33VbzSYM5Dw8Cbqz/CY33eHRU0bJxOceYKoezTGypqX6ch/PNrBXTVfNx3UDD/ukdNsH8l/exsm6Nv7WpnOYPsuAmYWUjeOlJ4ty7RC0csONbVeqfSRlWWYkEjHLeR6WGS2Ci5ZB1iu2cuuvpF9SK1ZMO1ODEz+KxMmyeNzh/hfmZQBVCBMyvnXGMeEUWA1w8EXCSFGVRXPp8G0zu0Z5n1SpU7dds+pvLs+zH5h79JP9W7Qcv3sRdwWo0h4el8uJ04bloLa37nIit8ISOMcjHh1wGuC2K9rXgxKRtI6M=",
+  "iv": "KHdjI+Z1KoYRRp2elwUV0A=="
+}
+
+### 判断用户是否登录
+POST {{base_qlive}}/qliveuser/login/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "appId": "wxca891295c56f2c79",
+  "code": "043Up4mz0VTI1d1tbapz0kqMlz0Up4mB"
+
+}
+
+### 修改个人信息
+POST {{base_qlive}}/qliveuser/update_userinfo/
+Authorization: QLiveToken {{user_token}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "area": "哈尔滨市"
+}
+
+### 获取礼物列表
+GET {{base_qlive}}/get_giftlist/
+Authorization: QLiveToken {{user_token}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "page": 2
+}
+
+### 获取充值列表
+GET {{base_qlive}}/get_paylist/
+Authorization: QLiveToken {{user_token}}
+Accept: application/json
+Content-Type: application/json
+
+###
+GET {{base_qlive}}/get_livelist/
+Authorization: QLiveToken {{user_token}}
+Accept: application/json
+Content-Type: application/json
+
+###
+POST {{base_qlive}}/qlive_like/
+Authorization: QLiveToken {{user_token}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "user_id": "2",
+  "like_state":1
+}
+###
